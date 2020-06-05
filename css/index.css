@@ -18,7 +18,9 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+    border: 0;
+    border: 0;
+    /* border: 1px solid grey; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -54,23 +56,57 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    
+    /* keep content inside parent */
+    max-width: 100%;
+    max-height: 100%;
+
+    font-size: 62.5%;
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
+}
+a{
+    color: black;
 }
 
 p {
     line-height: 1.4;
+    font-size: 1.6rem;
 }
 
 .container {
     width: 800px;
     margin: 0 auto;
 }
+/* navigation */
+header{
+    margin: 1.8rem 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.logo{
+    width: 20%;
 
+}
+.header-links{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header-links a{
+    text-decoration: none;
+    font-size: 1.4rem;
+
+}
+/* sections */
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -99,6 +135,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    font-size: 1.4rem;
 }
 
 .middle-content .boxes .box {
@@ -112,6 +149,36 @@ p {
     justify-content: center;
 }
 
+.middle-content .box.box1{
+    background: teal;
+}
+.middle-content .box.box2{
+    background: gold;
+}
+.middle-content .box.box3{
+    background: cadetblue;
+}
+.middle-content .box.box4{
+    background: coral;
+}
+.middle-content .box.box5{
+    background: crimson;
+}
+.middle-content .box.box6{
+    background: forestgreen;
+}
+.middle-content .box.box7{
+    background: darkorchid;
+}
+.middle-content .box.box8{
+    background: hotpink;
+}
+.middle-content .box.box9{
+    background: indigo;
+}
+.middle-content .box.box10{
+    background: dodgerblue;
+}
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -137,7 +204,7 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
