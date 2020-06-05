@@ -206,6 +206,10 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border: none;
+}
+.middle-content.about h2 {
+    padding: 0;
 }
 .strategy,.how-we-work, .places-we-work, .collaboration{
     width: 48%;
@@ -222,12 +226,16 @@ nav{
 .middle-content.about .button{
     margin: 1.6rem 0 1.1rem 0;
     font-size: 1.6rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
     border: .2rem solid black;
     border-radius: 1rem;
     display: inline-block;
     text-decoration: none;
 }
+.work-together{
+    margin-bottom: 1.8rem;
+}
+
 
 /* footer */
 footer {
