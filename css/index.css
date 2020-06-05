@@ -89,7 +89,7 @@ header{
 nav{
     display: flex;
     justify-content: space-between;
-    
+    margin-bottom: 2rem;
 }
 .logo{
     width: 20%;
@@ -100,12 +100,16 @@ nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
 }
 .header-links a{
     text-decoration: none;
     font-size: 1.4rem;
 
 }
+/* .header-image{
+    padding: 2rem;
+} */
 /* sections */
 .top-content {
     display: flex;
@@ -120,6 +124,11 @@ nav{
     padding: 0 1%;
     padding-bottom: 20px;  
 }
+/*for about page */
+.top-content .text-container.about {
+    width: 100%;
+}
+/* end of about page */
 
 .middle-content {
     margin-bottom: 20px;
@@ -192,7 +201,35 @@ nav{
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+    /* about page spacifics */
+.middle-content.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.strategy,.how-we-work, .places-we-work, .collaboration{
+    width: 48%;
+    border-bottom: .1rem dashed black;
+    margin: 0 0 4rem 0;
+}
+.strategy{
+    display: flex;
+    flex-direction: column;
+}
+.middle-content.about h2{
+    margin: 1.1rem 0 1.6rem 0;
+}
+.middle-content.about .button{
+    margin: 1.6rem 0 1.1rem 0;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border: .2rem solid black;
+    border-radius: 1rem;
+    display: inline-block;
+    text-decoration: none;
+}
 
+/* footer */
 footer {
     width: 100%;
     background: black;
